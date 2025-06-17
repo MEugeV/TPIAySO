@@ -36,7 +36,7 @@ Este proyecto conteneriza una aplicación Python que gestiona "favoritos" de usu
 2. Levantar Redis con Docker Compose:
 
     ```bash
-    docker compose up -d redis
+    docker compose up -d
 
 3. Levantar y acceder al contenedor del servidor para ejecutarlo:
     ```bash
