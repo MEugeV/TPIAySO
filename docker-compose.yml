@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  redis-db:
+    image: redis:latest
+    container_name: redis-db
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+  servidor:
+    build: ./servidor
+    container_name: servidor
+    depends_on:
+      - redis-db
+    environment:
+      - REDIS_HOST=redis-db
+      - REDIS_PORT=6379
+    stdin_open: true   # entrada interactiva
+    tty: true          # prompt
+    volumes:
+      - ./servidor:/usr/src/app  # (Desarrollo: monta el codigo luego de la fuente local y no la última imágen buildeada)
+ 
+volumes:
+  redis-data: # Persiste contenido base de datos al eliminar el contenedor
