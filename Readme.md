@@ -10,7 +10,8 @@
 
 ## Profesor
 
-- Profesor: Patricio Costello
+- Profesor: Osvaldo Falabella
+- Tutor: Patricio Costello
 
 ## Integrantes
 
