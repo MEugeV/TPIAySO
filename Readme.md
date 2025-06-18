@@ -34,6 +34,7 @@ Este proyecto conteneriza una aplicación Python que gestiona "favoritos" de usu
    git clone https://github.com/MEugeV/TPIAySO.git
    cd TPIAySO
 
+Para los siguientes pasos, en Windows, debe estar iniciada la aplicación Docker Dektop.
 2. Levantar Redis con Docker Compose:
 
     ```bash
